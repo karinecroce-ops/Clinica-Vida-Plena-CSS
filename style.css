@@ -1,8 +1,9 @@
 /* Seletor Universal */
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Seletor de TAG */
@@ -60,7 +61,11 @@ nav a {
     margin: 0 16px;
 }
 
-/* Conteúdo */
+nav a:hover {
+    color: #c5ddd6;
+}
+
+/* Conteúdo Principal */
 
 main {
     max-width: 960px;
@@ -76,6 +81,7 @@ footer {
     text-align: center;
     padding: 24px 16px;
 }
+
 /* Seletor de Classe */
 
 .botao {
@@ -88,6 +94,10 @@ footer {
     margin-top: 10px;
 }
 
+.botao:hover {
+    background-color: #365a54;
+}
+
 .card {
     display: inline-block;
     vertical-align: top;
@@ -96,31 +106,56 @@ footer {
     background-color: #ffffff;
     border: 1px solid #dce5e2;
     border-radius: 8px;
-    padding: 20px;
+    padding: 20px 10px;
     text-align: center;
+}
+
+.card-icone {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 12px;
+}
+
+.card h3 {
+    margin-bottom: 8px;
+    color: #29413e;
 }
 
 .card p {
     font-size: 14px;
-}
-
-.informacao {
-    display: inline-block;
-    width: 30%;
-    vertical-align: top;
-    padding: 15px;
+    margin-bottom: 0;
 }
 
 /* Seletor de ID */
 
 #inicio {
-    padding: 55px 20px;
+    padding: 40px 20px;
     background-color: #eef5f2;
-    text-align: left;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.inicio-texto {
+    flex: 1;
+}
+
+.inicio-imagem {
+    flex: 1;
+    text-align: right;
+}
+
+.inicio-imagem img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
 #especialidades {
-    padding: 40px 0;
+    padding: 20px 0 40px 0;
     text-align: center;
 }
 
@@ -128,6 +163,14 @@ footer {
     padding: 40px 20px;
     background-color: #e4eee9;
     border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.informacao-texto, .informacao-detalhes {
+    flex: 1;
 }
 
 #agendamento {
@@ -135,6 +178,7 @@ footer {
     border-radius: 8px;
     padding: 30px;
 }
+
 /* Seletor compartilhado */
 
 h1, h2, h3 {
@@ -165,6 +209,6 @@ button {
     cursor: pointer;
 }
 
-
-
-   
+button:hover {
+    background-color: #365a54;
+}
