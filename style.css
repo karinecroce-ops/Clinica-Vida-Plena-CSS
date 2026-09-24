@@ -135,3 +135,36 @@ footer {
     border-radius: 8px;
     padding: 30px;
 }
+/* Seletor compartilhado */
+
+h1, h2, h3 {
+    font-family: Georgia, serif;
+}
+
+h2, h3 {
+    color: #29413e;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    border: 1px solid #cbd8d4;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    background-color: #4d756e;
+    color: #ffffff;
+    border: none;
+    padding: 13px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+   
